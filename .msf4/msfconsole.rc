@@ -1,0 +1,26 @@
+set Prompt %red%L %yel%J %grn%S %blu%W%whi
+Set PromptChar ❯
+load nessus
+load pentest
+load sounds
+load alias
+alias j "jobs -v"
+alias s "sessions -v"
+alias -f w "workspace"
+alias so "show options"
+alias sa "show advanced"
+alias -f e "exploit -j -z"
+alias psexec_psh "use exploit/windows/smb/psexec_psh"
+alias psexec_cmd "use auxiliary/admin/smb/psexec_command"
+alias psexec "use exploit/windows/smb/psexec"
+alias handler "use exploit/multi/handler"
+alias screen_spy "use post/windows/gather/screen_spy"
+alias sphttps "set payload windows/meterpreter/reverse_https"
+alias sphttp "set payload windows/meterpreter/reverse_http"
+alias sptcp "set payload windows/meterpreter/reverse_tcp"
+alias smart_hashdump "use post/windows/gather/smart_hashdump"
+#setg enablecontextencoding true
+#setg enablestageencoding true
+setg exitonsession false
+setg MeterpreterUserAgent "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Win64; x64; Trident/4.0)"
+setg MeterpreterServerName "Microsoft-IIS/8.0"

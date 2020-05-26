@@ -16,6 +16,7 @@ set wildmenu
 filetype indent on
 set ignorecase
 set ruler
+set spell
 set tabstop=4
 set softtabstop=4
 set expandtab

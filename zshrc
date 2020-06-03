@@ -90,7 +90,7 @@ plugins=(
 	
 fastfile_var_prefix='@'	
 bindkey '^ ' autosuggest-execute
-alias myip='curl http://ipecho.net/plain; echo'
+alias myip='echo -e "\n"; curl http://ipecho.net/plain; echo'
 alias distro='cat /etc/*-release'
 alias server='python -m SimpleHTTPServer 8000'
 alias o='gio open'
@@ -103,7 +103,7 @@ alias ta='tmux at'
 alias r='ranger .'
 
 alias -s ovpn='sudo openvpn'
-alias msf='sudo msfdb init && sudo msfconsole -q -r ~/.msf4/msfconsole.rc'
+alias msf='sudo msfdb start && sudo msfconsole -q -r ~/.msf4/msfconsole.rc'
 
 source $ZSH/oh-my-zsh.sh
 
